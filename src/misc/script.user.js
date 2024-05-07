@@ -6,8 +6,8 @@
 // @author       ZHack Libs
 // @match        *://*/*
 // @icon         https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/icons/192.png
-// @updateURL    https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/misc/script.user.js
-// @downloadURL  https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/misc/script.user.js
+// @updateURL    https://github.com/theinfinityway/zhack/raw/main/src/misc/script.user.js
+// @downloadURL  https://github.com/theinfinityway/zhack/raw/main/src/misc/script.user.js
 // @grant        none
 // ==/UserScript==
 
