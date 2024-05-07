@@ -6,7 +6,11 @@
 // @author       ZHack Libs
 // @match        *://*/*
 // @icon         https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/icons/192.png
-// @grant        none
+// @updateURL    https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/misc/script.user.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/misc/script.user.js
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
 (async() => {
@@ -39,11 +43,12 @@
         }
     }
 
-    if (glFound)
+    if (glFound) {
         for (const item of js) {
             var el = document.createElement('script');
             el.setAttribute('type', 'text/javascript');
             el.src = root + item;
             document.head.append(el);
         }
+    }
 })();
