@@ -13,7 +13,7 @@ async function main() {
     });
 
     actualJson = await json.json();
-    UchiHack.answers = actualJson.check_jobs;
+    ZHack.answers = actualJson.check_jobs;
 
     function katexReplacer(input) {
         matches = [...input.matchAll(/\%l{(.*?)\}%/g)]
@@ -45,7 +45,7 @@ async function main() {
         if (oldHref != document.location.href) {
             oldHref = document.location.href;
             amogus = location.href.match(/(?:https:\/\/uchi.ru\/b2t\/student\/lesson\/)([0-9]+)(?:\/work\/)([0-9]+)/);
-            answers = UchiHack.answers.filter(ans => {
+            answers = ZHack.answers.filter(ans => {
                 return ans.id == amogus[2];
             });
 
@@ -125,12 +125,12 @@ async function main() {
 };
 
 (async () => {
-    if (typeof UchiHack !== 'undefined') return;
+    if (typeof ZHack !== 'undefined') return;
 
-    UchiHack = {};
-    UchiHack.type = "b2t";
-    UchiHack.version = "v1.0.0";
-    l_exinfo(`Версия ${UchiHack.version}`, UchiHack.style1, UchiHack.style5);
+    ZHack = {};
+    ZHack.type = "b2t";
+    ZHack.version = "v1.0.1";
+    l_exinfo(`Версия ${ZHack.version}`, ZHack.style1, ZHack.style5);
 
     await main();
 })();

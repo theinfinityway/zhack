@@ -4,7 +4,7 @@
     "version": "1.0.1",
 
     "author": "ZHack",
-    "description": "Injects ZHack v1.0.0",
+    "description": "Injects ZHack v1.0.1",
     "permissions": [ "<all_urls>", "tabs", "activeTab", "storage", "webNavigation" ],
 
     "background": {

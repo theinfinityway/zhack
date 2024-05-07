@@ -102,21 +102,21 @@ function main() {
         status = "Поддержка старых заданий";
     else status = "Готов";
 
-    if (UchiHack.status !== "Решаем") {
+    if (ZHack.status !== "Решаем") {
         var root = $("<div>").css("margin", "-20px auto 20px").css("width", "960px");
         var obj1 = $("<div>").css("position", "relative").css("border", "1px solid #262626").css("background", "#171717")
-            .css("border-radius", "20px").css("padding", "0 8px 0 8px").css("width", "max-content")
+            .css("border-radius", "10px").css("padding", "8px").css("width", "max-content").css("display","flex").css("font-weight","800")
             .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить карточку")).on("click", function () {
                 solve_all();
             }));
 
         var obj3 = $("<div>").css("position", "relative").css("border", "1px solid #262626").css("background", "#171717")
-            .css("border-radius", "20px").css("top", "-25px").css("padding", "0 8px 0 8px").css("width", "max-content").css("margin", "auto")
-            .append($("<a>").append(`<a style=\"cursor: pointer;\" href="https://github.com/theinfinityway/zhack/tree/main/src" target="_blank">ZHack ${UchiHack.version}</a>`)
-                .append($("<span style=\"color: white;\"> | Статус: </span>")).append($(`<span style=\"color: ${color};\">${status}</span>`)));
+            .css("border-radius", "10px").css("padding", "8px").css("width", "max-content").css("display","flex").css("font-weight","800").css("margin","auto")
+            .append($("<a>").append(`<a style="cursor: pointer; color: #fff; text-decoration: none;" href="https://github.com/theinfinityway/zhack/tree/main/src" target="_blank">ZHack ${ZHack.version}</a>`)
+                .append($("<span style=\"color: white;\"> » Статус: </span>")).append($(`<span style=\"color: ${color};\">${status}</span>`)));
 
         var obj2 = $("<div>").css("position", "relative").css("border", "1px solid #262626").css("background", "#171717").css("left", "86%")
-            .css("border-radius", "20px").css("top", "-50px").css("padding", "0 6px 0 8px").css("width", "max-content")
+            .css("border-radius", "10px").css("padding", "8px").css("width", "max-content").css("display","flex").css("font-weight","800")
             .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить задание")).on("click", function () {
                 solve_current();
                 reload_on_sent();
@@ -151,13 +151,13 @@ function main() {
 };
 
 (() => {
-    if (typeof UchiHack !== 'undefined') return;
+    if (typeof ZHack !== 'undefined') return;
 
-    UchiHack = {};
-    UchiHack.type = "card";
-    UchiHack.version = "v1.0.0";
+    ZHack = {};
+    ZHack.type = "card";
+    ZHack.version = "v1.0.1";
 
-    l_exinfo(`Версия ${UchiHack.version}`);
+    l_exinfo(`Версия ${ZHack.version}`);
 
     main();
 })();

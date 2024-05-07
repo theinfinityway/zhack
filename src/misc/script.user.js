@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         ZHack
 // @namespace    https://github.com/theinfinityway/zhack/tree/main/src
-// @version      1.0.0
-// @description  Injects ZHack v1.0.0
+// @version      1.0.1
+// @description  Injects ZHack v1.0.1
 // @author       ZHack Libs
 // @match        *://*/*
 // @icon         https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/icons/192.png
