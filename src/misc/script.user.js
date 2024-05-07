@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ZHack
-// @namespace    https://github.com/theinfinityway/zhackk@main/tree/main/src
+// @namespace    https://github.com/theinfinityway/zhack/tree/main/src
 // @version      1.0.1
 // @description  Injects ZHack v1.0.1
 // @author       ZHack Libs
