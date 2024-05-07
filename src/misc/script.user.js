@@ -6,8 +6,8 @@
 // @author       ZHack Libs
 // @match        *://*/*
 // @icon         https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/icons/192.png
-// @updateURL    https://github.com/theinfinityway/zhack/raw/main/src/misc/script.user.js
-// @downloadURL  https://github.com/theinfinityway/zhack/raw/main/src/misc/script.user.js
+// @updateURL    https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/misc/script.user.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/misc/script.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -19,7 +19,7 @@
         return new RegExp("^" + rule.split("*").map(escapeRegex).join(".*") + "$").test(str);
     }
 
-    var root = "https://github.com/theinfinityway/zhack/raw/main/src/";
+    var root = "https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/";
     var rawConfig = await fetch(root + "injector/config.json");
     var config = await rawConfig.json();
 
