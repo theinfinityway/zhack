@@ -19,7 +19,7 @@
         return new RegExp("^" + rule.split("*").map(escapeRegex).join(".*") + "$").test(str);
     }
 
-    var root = "https://cdn.jsdelivr.net/gh/theinfinityway/zhack/src/";
+    var root = "https://github.com/theinfinityway/zhack/raw/main/src/";
     var rawConfig = await fetch(root + "injector/config.json");
     var config = await rawConfig.json();
 
