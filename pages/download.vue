@@ -55,7 +55,7 @@
                 </p>
                 </header>
                 <footer class="mt-20 w-full">
-                    <a href="https://t.me/ithinkiwonthislife" rel="noopener noreferrer" target="_blank" class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-white border dark:bg-neutral-900 text-secondary-foreground shadow-sm hover:bg-neutral-100 dark:hover:bg-neutral-950 px-4 h-auto py-2 rounded-xl text-base w-full">
+                    <a href="https://t.me/theinfinityway/5" rel="noopener noreferrer" target="_blank" class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-white border dark:bg-neutral-900 text-secondary-foreground shadow-sm hover:bg-neutral-100 dark:hover:bg-neutral-950 px-4 h-auto py-2 rounded-xl text-base w-full">
                         Связаться
                     </a>
                 </footer>
